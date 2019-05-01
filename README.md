@@ -122,7 +122,7 @@ work is needed to support other type of apps and functionalities.
   with the chosen generic name. This represents the main operation in the HMA App store.  
 - create-all-container-apps.sh: creates five container APKs based on the mHealth APKs used in this
   prototype (in the mHealth-apps directory)
-- mHealth-apps: contains the APKs of the mHealth apps evaluated in this prototype.
+- mHealth-apps: contains examples of mHealth APKs.
 - manifest-stubs: contains Python 2 scripts to create the container APK.
 - video/HMA-Demo.mp4: short video showing the HMA prototype in action. 
 
