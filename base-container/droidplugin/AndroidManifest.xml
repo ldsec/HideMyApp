@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.morgoo.droidplugin" android:versionCode="1" android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="9" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application>
+
+
+        <service android:label="@string/service_name_plugin_manager_service" android:name=".PluginManagerService" />
+
+        <provider android:authorities="${applicationId}.plugin.servicemanager" android:name=".PluginServiceProvider" />
+
+        <service android:exported="false" android:label="@string/stub_name_service" android:name=".stub.ServiceStub$StubP08$P00" android:process=":PluginP08">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+        </service> 
+        <provider android:authorities="${authorityName}_P08" android:exported="false" android:label="@string/stub_name_povider" android:name=".stub.ContentProviderStub$StubP08" android:process=":PluginP08" />
+
+        <activity android:label="@string/stub_name_activity" android:launchMode="singleTop" android:name=".stub.ActivityStub$P08$SingleTop00" android:process=":PluginP08" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        
+
+    </application>
+    
+</manifest>

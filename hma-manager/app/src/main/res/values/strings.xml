@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HMA Manager</string>
+    <string name="install_a_new_app">INSTALL APP</string>
+    <string name="installled_apps">LAUNCH APPS</string>
+    <string name="icon">Icon</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="installed_apps">Installed Apps</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

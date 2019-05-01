@@ -1,0 +1,129 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.morgoo.droidplugin" android:versionCode="1" android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="9" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application>
+
+
+        <service android:label="@string/service_name_plugin_manager_service" android:name=".PluginManagerService" />
+
+        <provider android:authorities="${applicationId}.plugin.servicemanager" android:name=".PluginServiceProvider" />
+
+        <service android:exported="false" android:label="@string/stub_name_service" android:name=".stub.ServiceStub$StubP08$P00" android:process=":PluginP08">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+        </service> 
+        <provider android:authorities="${authorityName}_P08" android:exported="false" android:label="@string/stub_name_povider" android:name=".stub.ContentProviderStub$StubP08" android:process=":PluginP08" />
+
+        <activity android:label="@string/stub_name_activity" android:launchMode="singleTop" android:name=".stub.ActivityStub$P08$SingleTop00" android:process=":PluginP08" android:theme="@style/DroidPluginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$P08$Standard00" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$P08$Standard01" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$P08$Standard02" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$P08$Standard03" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$P08$Standard04" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="singleInstance" android:name=".stub.ActivityStub$P08$SingleInstance00" android:process=":PluginP08" android:theme="@style/DroidPluginTheme"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="singleTop" android:name=".stub.ActivityStub$Dialog$P08$SingleTop00" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$Dialog$P08$Standard00" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$Dialog$P08$Standard01" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$Dialog$P08$Standard02" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$Dialog$P08$Standard03" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="standard" android:name=".stub.ActivityStub$Dialog$P08$Standard04" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        <activity android:label="@string/stub_name_activity" android:launchMode="singleInstance" android:name=".stub.ActivityStub$Dialog$P08$SingleInstance00" android:process=":PluginP08" android:theme="@style/DroidPluginThemeDialog"><intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.morgoo.droidplugin.category.PROXY_STUB" />
+            </intent-filter>
+            <meta-data android:name="com.morgoo.droidplugin.ACTIVITY_STUB_INDEX" android:value="0" />
+        </activity>
+        </application>
+    
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.sanovation.catchmypain.phone.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+</manifest>
